@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/default.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/layout.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/media-queries.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/magnific-popup.css">
+    <link rel="stylesheet/less" href="%PUBLIC_URL%/css/cake.less">
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <title>Happy b-day</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <audio class="song" controls loop style="display: none;">
+      <source src="%PUBLIC_URL%/hbd.mp3">
+      Your browser isn't invited for super fun audio time.
+    </audio>
+    <div id="root"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+
+      
+      $(document).ready(function(){
+        //$('.song')[0].play();
+        $('#favePic').hide();
+        $('.smoothscroll').hide();
+        $('#blow').click(function(e){
+          e.preventDefault();
+          console.log("hello");
+          $('#favePic').fadeIn();
+          $('.cake-cover').hide();
+          $(this).hide();
+          $('.smoothscroll').show();
+          var duration = 15 * 1000;
+          var animationEnd = Date.now() + duration;
+          var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+          function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+          }
+
+          var interval = setInterval(function() {
+            var timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            var particleCount = 50 * (timeLeft / duration);
+            // since particles fall down, start a bit higher than random
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+            confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+          }, 250);
+        });
+      });
+    </script>
+  </body>
+</html>
