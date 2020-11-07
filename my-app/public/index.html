@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/css/media-queries.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/css/magnific-popup.css">
     <link rel="stylesheet/less" href="%PUBLIC_URL%/css/cake.less">
-	  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Happy b-day</title>
   </head>
 
@@ -28,6 +29,11 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jquery.fittext.js"></script>
@@ -40,10 +46,26 @@
         //$('.song')[0].play();
         $('#favePic').hide();
         $('.smoothscroll').hide();
+
+        function msgLoop (i) {
+          $("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+            i=i+1;
+            $("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+            if(i==50){
+              $("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+                $('#favePic').fadeIn();
+              });
+            }
+            else{
+              msgLoop(i);
+            }			
+    
+          });
+        }
+
         $('#blow').click(function(e){
           e.preventDefault();
           console.log("hello");
-          $('#favePic').fadeIn();
           $('.cake-cover').hide();
           $(this).hide();
           $('.smoothscroll').show();
@@ -67,6 +89,11 @@
             confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
             confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
           }, 250);
+
+          $('.message').fadeIn('slow');
+
+
+          msgLoop(0);
         });
       });
     </script>

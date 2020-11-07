@@ -39,12 +39,7 @@ header {
 }
 
 /* vertically center banner section */
-header:before {
-   content: '';
-   display: inline-block;
-   vertical-align: middle;
-   height: 100%;
-}
+
 header .banner {
    display: inline-block;
    vertical-align: middle;
@@ -725,15 +720,6 @@ call-to-action .button {
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
-/* Clearfix for .slides */
-.slides:before,
-.slides:after {
-   content: " ";
-   display: table;
-}
-.slides:after {
-   clear: both;
-}
 
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
@@ -1021,4 +1007,18 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 .github-btn{
    background-color: #34495e !important;
+}
+
+.message {
+	margin-top: 200px;
+	display: none;
+}
+.message p {
+	font-family: 'Signika', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #C4515C;
+	text-shadow: 2px 2px 2px #FFF;
+	display: none;
+	font-weight: bold;
 }

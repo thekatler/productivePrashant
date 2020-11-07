@@ -1,37 +1,15 @@
 import React, { Component } from 'react';
 import ParticlesBg  from "particles-bg";
+import Banner from "./Banner.js";
 
 class Header extends Component {
   render() {
 
-      if(this.props.data){
-         var project = this.props.data.project;
-         var github = this.props.data.github;
-         var name = this.props.data.name;
-         var description= this.props.data.description;
-         var city= this.props.data.address.city;
-         var networks= this.props.data.social.map(function(network){
-            return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-         })
-      }
-
       return (
          <header id="home">
-         {/* <ParticlesBg type="circle" bg={true} />
-         <nav id="nav-wrap">
-            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-            <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
-
-            <ul id="nav" className="nav">
-               <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-               <li><a className="smoothscroll" href="#about">About</a></li>
-               <li><a className="smoothscroll" href="#resume">Resume</a></li>
-               <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-               <li><a className="smoothscroll" href="#contact">Contact</a></li>
-            </ul>
-         </nav> */}
-
+            
             <div className="row banner">
+               <Banner />
                <div className="banner-text">
                   <div className="row cake-cover">
                      <div className="col-md-12 text-center">
@@ -48,8 +26,58 @@ class Header extends Component {
                         </div>
                      </div>
                   </div>
-                  
-                  <img id="favePic" className="pic" src={process.env.PUBLIC_URL + '/images/fave-pic.png'} alt="Fave_pic_cartoon" />
+                  <div className="row message">
+                     <div className="col-md-12">
+                        <p>Today is...</p>
+                        <p>as beautiful as other days</p>
+                        <p>but you realize</p>
+                        <p>another year has gone</p>
+                        <p>in a blink of the eyes</p>
+                        <p><strong>however</strong></p>
+                        <p>Do you know..?</p>
+                        <p>today is just special</p>
+                        <p>so special to you</p>
+                        <p>that's why</p>
+                        <p>Let's make it...</p>
+                        <p>the best celebration ever</p>
+                        <p>and let me share...</p>
+                        <p>a piece of happiness to you</p>
+                        <p>I made all this...</p>
+                        <p>as a birthday present to you</p>
+                        <p>thanks for being there</p>
+                        <p>thanks for the friendship we made</p>
+                        <p>thanks for everything</p>
+                        <p>I wish you all the best</p>
+                        <p>May your life be at ease</p>
+                        <p>May all your wishes come true</p>
+                        <p>Remember</p>
+                        <p>your ambitions</p>
+                        <p>you live as a free bird...</p>
+                        <p>flying in the blue sky</p>
+                        <p>Now things are different...</p>
+                        <p>real story of your life</p>
+                        <p>is just about to begin</p>
+                        <p>indeed..</p>
+                        <p>but...</p>
+                        <p>don't worry</p>
+                        <p>because...</p>
+                        <p>God has your back</p>
+                        <p>and</p>
+                        <p>this year will be better</p>
+                        <p>and I hope</p>
+                        <p>you'll find...</p>
+                        <p>happiness along the way</p>
+                        <p>keep your spirit up</p>
+                        <p>enjoy every single moment...</p>
+                        <p>that you experience today</p>
+                        <p>fill it with your most beautiful smile</p>
+                        <p>and make it the best memory..</p>
+                        <p>lastly...</p>
+                        <p>I'd like to wish you one more time</p>
+                        <p>a very happy birthday, babu</p>
+                     </div>
+                  </div>
+                  <img id="favePic" className="pic mt-0" src={process.env.PUBLIC_URL + '/images/fave-pic.png'} alt="Fave_pic_cartoon" style={{objectFit:'contain'}} />
                </div>
             </div>
             
