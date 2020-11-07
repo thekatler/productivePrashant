@@ -7,11 +7,10 @@ class Header extends Component {
 
       return (
          <header id="home">
-            
-            <div className="row banner">
+            <div className="d-flex flex-column banner w-100">
                <Banner />
-               <div className="banner-text">
-                  <div className="row cake-cover">
+               <div className="">
+                  <div className="cake-cover">
                      <div className="col-md-12 text-center">
                         <div className="cake">
                         <div className="velas">
@@ -26,7 +25,7 @@ class Header extends Component {
                         </div>
                      </div>
                   </div>
-                  <div className="row message">
+                  <div className="message">
                      <div className="col-md-12">
                         <p>Today is...</p>
                         <p>as beautiful as other days</p>

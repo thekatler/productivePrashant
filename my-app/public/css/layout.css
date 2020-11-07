@@ -45,11 +45,11 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
+   height: 100%;
    padding-bottom: 30px;
    text-align: center;
 }
 
-header .banner-text { width: 100%; }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
