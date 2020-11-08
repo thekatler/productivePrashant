@@ -28,44 +28,32 @@ class Header extends Component {
                   <div className="message">
                      <div className="col-md-12">
                         <p>Today is...</p>
-                        <p>as beautiful as other days</p>
-                        <p>but you realize</p>
-                        <p>another year has gone</p>
-                        <p>in a blink of the eyes</p>
-                        <p><strong>however</strong></p>
-                        <p>Do you know..?</p>
-                        <p>today is just special</p>
-                        <p>so special to you</p>
-                        <p>that's why</p>
-                        <p>Let's make it...</p>
-                        <p>the best celebration ever</p>
-                        <p>and let me share...</p>
-                        <p>a piece of happiness to you</p>
-                        <p>I made all this...</p>
-                        <p>as a birthday present to you</p>
-                        <p>thanks for being there</p>
-                        <p>thanks for the friendship we made</p>
-                        <p>thanks for everything</p>
+                        <p>a special day,</p>
+                        <p>my babu's birthday.</p>
+                        <p>So that's why</p>
+                        <p>I made this...</p>
+                        <p>as a birthday present to you.</p>
+                        <p>Thanks for being there</p>
+                        <p>Thanks for the bond we made</p>
+                        <p>Thanks for everything</p>
                         <p>I wish you all the best</p>
                         <p>May your life be at ease</p>
                         <p>May all your wishes come true</p>
                         <p>Remember</p>
                         <p>your ambitions</p>
-                        <p>you live as a free bird...</p>
-                        <p>flying in the blue sky</p>
-                        <p>Now things are different...</p>
-                        <p>real story of your life</p>
-                        <p>is just about to begin</p>
-                        <p>indeed..</p>
+                        <p>yes, it is a tough journey</p>
                         <p>but...</p>
                         <p>don't worry</p>
                         <p>because...</p>
-                        <p>God has your back</p>
-                        <p>and</p>
-                        <p>this year will be better</p>
+                        <p>you are strong</p>
+                        <p>smart</p>
+                        <p>beautiful</p>
+                        <p>amazing</p>
+                        <p>and cute, the cutest.</p>
+                        <p>This year will be better</p>
                         <p>and I hope</p>
                         <p>you'll find...</p>
-                        <p>happiness along the way</p>
+                        <p>happiness along the way,</p>
                         <p>keep your spirit up</p>
                         <p>enjoy every single moment...</p>
                         <p>that you experience today</p>
