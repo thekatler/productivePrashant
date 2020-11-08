@@ -44,7 +44,6 @@
       
       $(document).ready(function(){
         //$('.song')[0].play();
-        $('#favePic').hide();
         $('.smoothscroll').hide();
 
         function msgLoop (i) {
@@ -53,23 +52,22 @@
             $("p:nth-child("+i+")").fadeIn('slow').delay(1000);
             if(i==50){
               $("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+                $('.message').hide();
                 $('#favePic').fadeIn();
               });
             }
             else{
               msgLoop(i);
-            }			
-    
+            }
           });
         }
 
         $('#blow').click(function(e){
           e.preventDefault();
-          console.log("hello");
           $('.cake-cover').hide();
           $(this).hide();
-          $('.smoothscroll').show();
-          var duration = 15 * 1000;
+          //$('.smoothscroll').show();
+          var duration = 300 * 1000;
           var animationEnd = Date.now() + duration;
           var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
@@ -91,7 +89,6 @@
           }, 250);
 
           $('.message').fadeIn('slow');
-
 
           msgLoop(0);
         });

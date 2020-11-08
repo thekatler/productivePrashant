@@ -6,8 +6,8 @@ class Header extends Component {
   render() {
 
       return (
-         <header id="home">
-            <div className="d-flex flex-column banner w-100">
+         <header id="home" className="container">
+            <div className="d-flex flex-column banner">
                <Banner />
                <div className="">
                   <div className="cake-cover">
@@ -82,7 +82,7 @@ class Header extends Component {
             
             <p className="scrolldown">
                <a id="blow" href="#">Blow</a>
-               <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+               {/* <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a> */}
             </p>
 
          </header>

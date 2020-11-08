@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+#root { background: #efbdc1; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -32,8 +32,6 @@ header {
    position: relative;
    height: 800px;
    min-height: 500px;
-   width: 100%;
-   background: #efbdc1;
    text-align: center;
    overflow: hidden;
 }
@@ -1021,4 +1019,8 @@ footer .social-links li:first-child { margin-left: 0; }
 	text-shadow: 2px 2px 2px #FFF;
 	display: none;
 	font-weight: bold;
+}
+
+#favePic {
+   display: none;
 }

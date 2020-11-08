@@ -18,7 +18,7 @@
 /*----------------------------------------------------*/
 /* Smooth Scrolling
 ------------------------------------------------------ */
-
+/*
    $('.smoothscroll').on('click',function (e) {
 	    e.preventDefault();
 
@@ -31,7 +31,7 @@
 	        window.location.hash = target;
 	    });
 	});
-
+*/
 
 /*----------------------------------------------------*/
 /* Highlight the current section in the navigation bar
