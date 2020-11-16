@@ -35,21 +35,15 @@ class Header extends Component {
                         <p>as a birthday present to you.</p>
                         <p>Thank you for always being there,</p>
                         <p>for loving me,</p>
-                        <p>for encouraging me to improve myself,</p>
-                        <p>for everything.</p>
+                        <p>for being the best gf i could ever have.</p>
                         <p>I wish you all the best babe</p>
-                        <p>May all your wishes come true</p>
-                        <p>Remember your ambitions</p>
-                        <p>yes, it is a tough journey</p>
-                        <p>but...</p>
-                        <p>don't worry</p>
-                        <p>because...</p>
-                        <p>you are strong</p>
+                        <p>May all the wishes come true</p>
+                        <p>for my</p>
                         <p>smart</p>
                         <p>beautiful</p>
                         <p>amazing</p>
-                        <p>and cute, the cutest.</p>
-                        <p>And i "know" you will achieve them.</p>
+                        <p>cute,.... the cutest</p>
+                        <p>girlfriend, i could ever have.</p>
                         <p>This year will be better</p>
                         <p>and I hope</p>
                         <p>you'll find...</p>
@@ -58,10 +52,10 @@ class Header extends Component {
                         <p>enjoy every single moment...</p>
                         <p>that you experience</p>
                         <p>fill it with your most beautiful smile</p>
-                        <p>and make it the best memory..</p>
-                        <p>lastly...</p>
+                        <p>and make it the best memory.</p>
+                        <p>Lastly...</p>
                         <p>I'd like to wish you one more time</p>
-                        <p>a very happy birthday, babu</p>
+                        <p>a very happy birthday</p>
                      </div>
                   </div>
                   <img id="favePic" className="pic mt-0" src={process.env.PUBLIC_URL + '/images/fave-pic.png'} alt="Fave_pic_cartoon" style={{objectFit:'contain'}} />

@@ -46,13 +46,14 @@
         $('.smoothscroll').hide();
 
         function msgLoop (i) {
-          $("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+          $("p:nth-child("+i+")").fadeOut('slow').delay(900).promise().done(function(){
             i=i+1;
             $("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-            if(i==36){
+            if(i==30){
               $("p:nth-child(35)").fadeOut('slow').promise().done(function () {
                 $('.message').hide();
                 $('.bannar').addClass('bannar-come');
+                $('.love-message').fadeIn(900);
                 $('#favePic').fadeIn(900);
               });
             }
