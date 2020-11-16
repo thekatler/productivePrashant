@@ -33,14 +33,13 @@ class Header extends Component {
                         <p>So that's why</p>
                         <p>I made this...</p>
                         <p>as a birthday present to you.</p>
-                        <p>Thanks for being there</p>
-                        <p>Thanks for the bond we made</p>
-                        <p>Thanks for everything</p>
-                        <p>I wish you all the best</p>
-                        <p>May your life be at ease</p>
+                        <p>Thank you for always being there,</p>
+                        <p>for loving me,</p>
+                        <p>for encouraging me to improve myself,</p>
+                        <p>for everything.</p>
+                        <p>I wish you all the best babe</p>
                         <p>May all your wishes come true</p>
-                        <p>Remember</p>
-                        <p>your ambitions</p>
+                        <p>Remember your ambitions</p>
                         <p>yes, it is a tough journey</p>
                         <p>but...</p>
                         <p>don't worry</p>
@@ -50,13 +49,14 @@ class Header extends Component {
                         <p>beautiful</p>
                         <p>amazing</p>
                         <p>and cute, the cutest.</p>
+                        <p>And i "know" you will achieve them.</p>
                         <p>This year will be better</p>
                         <p>and I hope</p>
                         <p>you'll find...</p>
                         <p>happiness along the way,</p>
                         <p>keep your spirit up</p>
                         <p>enjoy every single moment...</p>
-                        <p>that you experience today</p>
+                        <p>that you experience</p>
                         <p>fill it with your most beautiful smile</p>
                         <p>and make it the best memory..</p>
                         <p>lastly...</p>
